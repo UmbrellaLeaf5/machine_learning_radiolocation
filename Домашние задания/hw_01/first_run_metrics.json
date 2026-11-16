@@ -27,5 +27,31 @@
       "step_size": 10,
       "gamma": 0.5
     }
+  },
+  "validation_n1000_submission": {
+    "evaluation": "first 1000 validation pairs; identical ordering and Submission interface",
+    "device": "cuda",
+    "results": {
+      "first_run": {
+        "run_name": "first_run",
+        "n_pairs": 1000,
+        "gallery_size": 1000,
+        "dim": 256,
+        "metric": "euclidean",
+        "Recall@10": 0.727,
+        "embedding_time_s": 3.89,
+        "batch_independent": true
+      },
+      "dim128": {
+        "run_name": "dim128",
+        "n_pairs": 1000,
+        "gallery_size": 1000,
+        "dim": 128,
+        "metric": "euclidean",
+        "Recall@10": 0.709,
+        "embedding_time_s": 3.46,
+        "batch_independent": true
+      }
+    }
   }
 }
