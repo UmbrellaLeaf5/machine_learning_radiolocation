@@ -1,0 +1,102 @@
+{
+  "checkpoint": "Домашние задания/hw_01/results/first_run/hw1_best.pt",
+  "device": "cuda",
+  "gallery_size": 2100,
+  "n_pairs": 2100,
+  "embedding_time_s": 8.4,
+  "rank_distribution": {
+    "rank_1": 733,
+    "rank_2_10": 485,
+    "rank_11_20": 144,
+    "rank_gt_20": 738
+  },
+  "recall_at_1_5_10": {
+    "1": 0.34904761904761905,
+    "5": 0.5114285714285715,
+    "10": 0.58
+  },
+  "mrr": 0.42937814868225915,
+  "rank_by_sar_saturation_quartile_low_to_high": [
+    {
+      "mean_saturation_fraction": 0.00024373372395833332,
+      "recall_at_10": 0.42857142857142855,
+      "n": 525
+    },
+    {
+      "mean_saturation_fraction": 0.0018694487072172619,
+      "recall_at_10": 0.4704761904761905,
+      "n": 525
+    },
+    {
+      "mean_saturation_fraction": 0.004604463123139881,
+      "recall_at_10": 0.5828571428571429,
+      "n": 525
+    },
+    {
+      "mean_saturation_fraction": 0.01848417736235119,
+      "recall_at_10": 0.8380952380952381,
+      "n": 525
+    }
+  ],
+  "rank_by_opt_mean_intensity_quartile_dark_to_bright": [
+    {
+      "mean_intensity": 84.50726205008371,
+      "recall_at_10": 0.7542857142857143,
+      "n": 525
+    },
+    {
+      "mean_intensity": 106.64676362537202,
+      "recall_at_10": 0.5257142857142857,
+      "n": 525
+    },
+    {
+      "mean_intensity": 119.87447835286459,
+      "recall_at_10": 0.49523809523809526,
+      "n": 525
+    },
+    {
+      "mean_intensity": 146.60555324009488,
+      "recall_at_10": 0.5447619047619048,
+      "n": 525
+    }
+  ],
+  "rank_by_contiguous_id_quartile": [
+    {
+      "id_min": 16869,
+      "id_max": 17393,
+      "recall_at_10": 0.7542857142857143,
+      "n": 525
+    },
+    {
+      "id_min": 17394,
+      "id_max": 17918,
+      "recall_at_10": 0.6819047619047619,
+      "n": 525
+    },
+    {
+      "id_min": 17919,
+      "id_max": 18443,
+      "recall_at_10": 0.45714285714285713,
+      "n": 525
+    },
+    {
+      "id_min": 18444,
+      "id_max": 18968,
+      "recall_at_10": 0.4266666666666667,
+      "n": 525
+    }
+  ],
+  "nearest_wrong_by_id_gap_le_16": {
+    "n_errors": 108,
+    "fraction_of_all_errors": 0.07900512070226774,
+    "mean_opt_pixel_correlation": 0.024654931924876267,
+    "median_opt_gray_abs_difference": 51.38505554199219,
+    "interpretation": "Pixel similarity was measured directly; nearby IDs alone are not treated as proof of overlap."
+  },
+  "preprocessing_audit": {
+    "sar": "cv2 IMREAD_UNCHANGED grayscale, duplicated to RGB, /255, ImageNet mean/std; no augmentation",
+    "opt": "cv2 IMREAD_UNCHANGED BGR converted to RGB, /255, ImageNet mean/std; no augmentation",
+    "embedding": "L2 normalized in each independent branch; Euclidean ranking",
+    "training_alignment": "same prepare_image function is used for Dataset and is reproduced in standalone Submission"
+  }
+}
