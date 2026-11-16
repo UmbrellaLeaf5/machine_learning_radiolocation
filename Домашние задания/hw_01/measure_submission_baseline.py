@@ -19,8 +19,8 @@ NOTEBOOK_PATH = HW_DIR / "HW1.ipynb"
 METRICS_PATH = HW_DIR / "first_run_metrics.json"
 VAL_DIR = ROOT / "data" / "QXSLAB_SAROPT" / "val"
 RUNS = {
-    "first_run": HW_DIR / "results" / "first_run" / "hw1_best.pt",
-    "dim128": HW_DIR / "results" / "dim128" / "hw1_best.pt",
+    "first_run": HW_DIR / "results" / "first_run" / "submission.pt",
+    "dim128": HW_DIR / "results" / "dim128" / "submission.pt",
 }
 
 

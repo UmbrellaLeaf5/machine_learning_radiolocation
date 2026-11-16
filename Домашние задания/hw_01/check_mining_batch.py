@@ -31,6 +31,7 @@ def main() -> None:
 
     namespace: dict[str, Any] = {}
     notebook = json.loads((HW_DIR / "HW1.ipynb").read_text(encoding="utf-8"))
+    preprocessing = json.loads((HW_DIR / "first_run_metrics.json").read_text(encoding="utf-8"))["preprocessing"]
     source = next(
         "".join(cell.get("source", []))
         for cell in notebook["cells"]
@@ -44,7 +45,7 @@ def main() -> None:
         image = cv2.imread(str(path), cv2.IMREAD_UNCHANGED)
         if image is None:
             raise FileNotFoundError(path)
-        return namespace["prepare_submission_image"](image)
+        return namespace["prepare_submission_image"](image, preprocessing[modality])
 
     sar = torch.stack([prepare("sar", image_id) for image_id in ids])
     opt = torch.stack([prepare("opt", image_id) for image_id in ids])

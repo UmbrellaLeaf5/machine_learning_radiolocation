@@ -1,9 +1,9 @@
 {
-  "checkpoint": "Домашние задания/hw_01/results/first_run/hw1_best.pt",
+  "checkpoint": "Домашние задания/hw_01/results/first_run/submission.pt",
   "device": "cuda",
   "gallery_size": 2100,
   "n_pairs": 2100,
-  "embedding_time_s": 8.4,
+  "embedding_time_s": 8.44,
   "rank_distribution": {
     "rank_1": 733,
     "rank_2_10": 485,

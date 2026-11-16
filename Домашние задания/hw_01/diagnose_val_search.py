@@ -19,7 +19,7 @@ from measure_submission_baseline import load_submission
 HW_DIR = Path(__file__).resolve().parent
 ROOT = HW_DIR.parents[1]
 VAL_DIR = ROOT / "data" / "QXSLAB_SAROPT" / "val"
-WEIGHTS = HW_DIR / "results" / "first_run" / "hw1_best.pt"
+WEIGHTS = HW_DIR / "results" / "first_run" / "submission.pt"
 REPORT_PATH = HW_DIR / "first_run_val_diagnostics.json"
 FIGURE_PATH = HW_DIR / "first_run_val_diagnostics.png"
 
