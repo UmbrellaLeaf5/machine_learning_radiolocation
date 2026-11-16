@@ -1,0 +1,16 @@
+{
+  "checkpoint": "Домашние задания/hw_01/results/first_run/hw1_best.pt",
+  "split": "train",
+  "seed": 2026,
+  "batch_size": 32,
+  "margin": 0.2,
+  "hard_loss": 0.001923128729686141,
+  "semi_hard_loss": 0.001923128729686141,
+  "semi_hard_selected": 3,
+  "directional_selections": 64,
+  "hard_gradient_norm": 0.2803305983543396,
+  "semi_hard_gradient_norm": 0.2803305983543396,
+  "hard_negative_id_gap_le_16": 0,
+  "weights_updated": false,
+  "decision": "Hard and semi-hard losses/selectors coincide on this deterministic batch; no full training justified by this check."
+}
