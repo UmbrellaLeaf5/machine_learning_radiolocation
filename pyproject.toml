@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Materials and notebooks for machine learning in radiolocation"
 requires-python = ">=3.10"
 dependencies = [
+    "ipykernel",
     "ipython",
     "jupyter",
     "matplotlib",
