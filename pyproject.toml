@@ -12,6 +12,7 @@ dependencies = [
     "opencv-python",
     "pandas",
     "pillow",
+    "polars>=2.0.0",
     "psutil",
     "pylabel",
     "scipy",
