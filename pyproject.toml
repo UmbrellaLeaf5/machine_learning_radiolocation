@@ -1,0 +1,24 @@
+[project]
+name = "machine-learning-radiolocation"
+version = "0.1.0"
+description = "Materials and notebooks for machine learning in radiolocation"
+requires-python = ">=3.10"
+dependencies = [
+    "ipython",
+    "jupyter",
+    "matplotlib",
+    "numpy",
+    "opencv-python",
+    "pandas",
+    "pillow",
+    "psutil",
+    "pylabel",
+    "scipy",
+    "torch",
+    "torchvision",
+    "tqdm",
+    "ultralytics",
+]
+
+[tool.uv]
+package = false
