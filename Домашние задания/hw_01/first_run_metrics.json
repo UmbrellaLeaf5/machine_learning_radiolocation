@@ -1,0 +1,22 @@
+{
+  "run_name": "first_run",
+  "seed": 2026,
+  "dim": 256,
+  "device": "NVIDIA GeForce RTX 4070 Ti",
+  "validation": {
+    "Recall@1": 0.34904761904761905,
+    "Recall@5": 0.5114285714285715,
+    "Recall@10": 0.58,
+    "MRR": 0.4292747787958062,
+    "FPR95": 0.09395812064702012,
+    "gallery_size": 2100.0
+  },
+  "training": {
+    "epochs_run": 30,
+    "best_epoch": 26,
+    "best_val_recall1": 0.34904761904761905,
+    "lr": 0.0001,
+    "batch_size": 64,
+    "margin": 0.2
+  }
+}
